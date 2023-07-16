@@ -1,5 +1,7 @@
 package com.peasenet.mod;
 
+import com.peasenet.config.FullbrightConfig;
+import com.peasenet.main.Settings;
 import com.peasenet.mods.render.ModFullBright;
 import com.peasenet.main.GavinsMod;
 import net.fabricmc.api.ModInitializer;
@@ -14,7 +16,9 @@ public class FullBrightMod implements ModInitializer {
      */
     @Override
     public void onInitialize() {
-        LOGGER.info("Hello Fabric world!");
+        LOGGER.info("Initializing GEM FullBright Mod...");
+        Settings.addConfig("fullbright", new FullbrightConfig());
         GavinsMod.addMod(new ModFullBright());
+        LOGGER.info("GEM FullBright Mod Initialized!");
     }
 }
