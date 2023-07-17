@@ -6,10 +6,10 @@
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/gavinsmod/mod-template"
+    "repo": "https://github.com/gavinsmod/gem-fullbright"
   },
   "license": "MIT",
-  "icon": "assets/mod-template/icon.png",
+  "icon": "assets/gem-fullbright/icon.png",
   "environment": "client",
   "entrypoints": {
     "main": [
@@ -20,7 +20,7 @@
     ]
   },
   "mixins": [
-    "mod-template.mixins.json"
+    "gem-fullbright.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
