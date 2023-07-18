@@ -24,7 +24,6 @@ import com.peasenet.main.GavinsMod
 import com.peasenet.main.GavinsModClient
 import com.peasenet.main.Settings
 import com.peasenet.mixinterface.ISimpleOption
-import com.peasenet.mods.Type
 import com.peasenet.settings.SettingBuilder
 import com.peasenet.util.RenderUtils
 
@@ -78,7 +77,7 @@ class ModFullBright : RenderMod(
 
     override fun activate() {
         super.activate()
-        if (!GavinsMod.isEnabled(Type.XRAY)) setLastGamma()
+        if (!GavinsMod.isEnabled("xray")) setLastGamma()
         deactivating = false
     }
 
@@ -86,7 +85,7 @@ class ModFullBright : RenderMod(
         if (isActive && !isHighGamma) {
             setHighGamma()
             return
-        } else if (!GavinsMod.isEnabled(Type.XRAY) && !isLastGamma && deactivating) {
+        } else if (!GavinsMod.isEnabled("xray") && !isLastGamma && deactivating) {
             setLowGamma()
             deactivating = !isLastGamma
         }
