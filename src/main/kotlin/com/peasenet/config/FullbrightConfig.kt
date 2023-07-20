@@ -20,7 +20,6 @@
 package com.peasenet.config
 
 import com.peasenet.main.Mods
-import com.peasenet.mods.Type
 
 /**
  * Configuration file for fullbright.
