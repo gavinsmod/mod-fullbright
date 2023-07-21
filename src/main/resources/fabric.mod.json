@@ -14,14 +14,8 @@
   "entrypoints": {
     "main": [
       "com.peasenet.mod.FullBrightMod"
-    ],
-    "client": [
-      "com.peasenet.mod.FullBrightClientInitializer"
     ]
   },
-  "mixins": [
-    "gem-fullbright.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "gemclient-core": ">=1.0.1",
